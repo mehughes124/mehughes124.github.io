@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Michael Hughes's CS50 Homepage Project - Work</title>
+    </head>
+    <body class="Site workPage">
+        <nav class="navbar navbar-expand-md navbar-light bg-light" id="nav">
+            <a class="navbar-brand" href="/index">Michael Hughes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="/work">Work</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="/life">Life</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="/balance">Balance</a>
+                </div>
+            </div>
+        </nav>
+        <main class="Site-content">
+        <h1>
+            hello, work page
+        </h1>
+
+
+        <div class="container-fluid d-flex flex-column">
+            <div class="flex-container">
+                <h2>Select:</h2>
+            </div>
+            <div class="flex-container">
+                <div><button class="experienceButton" id="productButton">Product<br>Work</button></div>
+                <div><button class="experienceButton" id= "marketingButton">Marketing<br>Work</button></div>
+                <div><button class="experienceButton" id="opsButton">Operations<br>Work</button></div>
+            </div>
+            <div class="row align-items-center jobDescription">
+                <div class="col-sm-3 logoSpace h-auto offset-sm-2"><img src="/Images/MondoLogoTransparent.png" class="logo" id="mondoLogo"></div>
+                <div class="col-sm-5 h-auto">
+                    <ul class="workLists">
+                        <li class="productLI"><span class="workPageLIHeader">Product:</span> Salesforce and Wordpress - creating sales and marketing integration and reporting pipelines with outsourced dev resources sprinkled in with a little of my own HTML, CSS and JS.</li>
+                        <li class="marketingLI"><span class="workPageLIHeader">Marketing:</span> Mostly B2B e-mail management (Salesforce/Pardot/Hubspot) - Led segmentation efforts across 10+ year-old list for targeted engagement. Highly effective. E-mail team drove ~%10 of sales.</li>
+                        <li class="opsLI"><span class="workPageLIHeader">Ops:</span> A little bit of everything. Event management, sales trainings, report processing. Whatever needed to get done.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row align-items-center top-row-buffer jobDescription">
+                <div class="col-sm-3 logoSpace offset-sm-2"><img src="/Images/WhistlePigLogoTransparent.png" class="logo"></div>
+                <div class="col-sm-5">
+                    <ul class="workLists">
+                        <li class="productLI"><span class="workPageLIHeader">Product:</span> Shopify and Wordpress - a brand-focused design project with age-gating, email capture, store finder data display, and social publishing integration. Lightly customized e-commerce tools for brand engagement and back-of-house inventory management for sales.</li>
+                        <li class="marketingLI"><span class="workPageLIHeader">Marketing:</span> Email (mailchimp) drip program strategy with design/copy development. Light HTML/CSS/graphic design here, with contract help. Executed an experimental Instagram influencer campaign to assess brand resonance across different consumer groups.</li>
+                        <li class="opsLI"><span class="workPageLIHeader">Ops:</span> Trade marketing/sales support through event execution, trade promo item ideation and procurement. </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row align-items-center top-row-buffer jobDescription">
+                <div class="col-sm-3 logoSpace offset-sm-2"><img src="/Images/NJOYLogoTransparent.png" class="logo"></div>
+                <div class="col-sm-5">
+                    <ul class="workLists">
+                        <li class="productLI"><span class="workPageLIHeader">Product:</span> Spree (Ruby e-commerce) and Wordpress - I managed the build out of a US + International e-commerce platform in an emerging, highly regulated CPG category. Best-in-class age-verification process, sophisticated analytics integrations (Mixpanel, GA, Tableau). Very proud of what we built. Archived <a class="inlineLink" href="https://web.archive.org/web/20150716223341/https://www.njoy.com/">here</a>.</li>
+                        <li class="marketingLI"><span class="workPageLIHeader">Marketing:</span> Marketo for e-mail (difficult platform choice, but we made it work). We used what seems like every display platform that would have us too. The category was locked out of Google and Facebook ad networks, so we had to get creative. Focused a lot on affiliate networks and organic SEO efforts as well.</li>
+                        <li class="opsLI"><span class="workPageLIHeader">Ops:</span> I helped with experiential event management early on (Coachella and the Super Bowl were highlights). I also helped as ad-hoc team support on user research, influencer outreach, social media contests, and whatever else the team needed an extra pair of eyes or hands for.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </main>
+
+        <footer id="footer">
+            <div class="container">
+                <span>
+                    <a href="https://www.twitter.com/mehughes124" target="_blank"><img src="/Images/twitter_logo.png"></a>
+                </span>
+                <span><a href="https://www.linkedin.com/in/michael-hughes-a1713524/" target="_blank"><img src="/Images/linkedin_logo.png"></a></span>
+            </div>
+        </footer>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/usm/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="homepage.js"></script>
+    </body>
+</html>

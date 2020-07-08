@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Michael Hughes's CS50 Homepage Project - Home</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light" id="nav">
+            <a class="navbar-brand" href="/index">Michael Hughes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="/work">Work</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="/life">Life</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="/balance">Balance</a>
+                </div>
+            </div>
+        </nav>
+        <div id="page-container">
+        <div id="content-wrap">
+        <h1>
+            hello, home page
+        </h1>
+
+        <div class="container-fluid w-75">
+            <div class="row h-100">
+                <!--<div class="col-2 align-self-center h-100"></div>-->
+                <div class="col-sm-3 align-self-center h-100 offset-sm-2">
+                    <div class="card text-white h-100" id="work-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Work</h3>
+                            <h4 class="card-subtitle mb-2 card-extra">What I do for other people</h4>
+                            <a href="/work" class="btn" id="work-button">Peruse</a>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="col-2 align-self-center h-100"></div>-->
+                <div class="col-sm-3 align-self-center h-100 offset-sm-2">
+                    <div class="card text-white h-100" id="life-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Life</h3>
+                            <h4 class="card-subtitle mb-2 card-extra">My Hobbies and Interests</h4>
+                            <a href="/life" class="btn" id="life-button">Check it out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 align-self-center h-100"></div>
+            </div>
+        </div>
+        <div class="container-fluid w-75 bar-tri-container">
+            <div class="bar" id="bar"></div>
+            <div class="container tri-container">
+                <div class="triangle">
+                    <div class="triangle-text">
+                        <div id="triangle-title-div"><h3 id="triangle-title">Balance</h3></div>
+                        <div id="triangle-subtitle-div"><h4 id="triangle-subtitle">Keep it Healthy lorem ipsum etc. etc.</h4></div>
+                        <div id="balance-btn-div"><a href="/balance" class="btn" id="balance-button">Read on</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <footer id="footer">
+            <div class=container>
+                <span>
+                    <a href="https://www.twitter.com/mehughes124" target="_blank"><img src="/Images/twitter_logo.png"></a>
+                </span>
+                <span><a href="https://www.linkedin.com/in/michael-hughes-a1713524/" target="_blank"><img src="/Images/linkedin_logo.png"></a></span>
+            </div>
+        </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="homepage.js"></script>
+    </body>
+</html>

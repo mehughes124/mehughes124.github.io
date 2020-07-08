@@ -1,0 +1,202 @@
+body{
+    font-family: sans-serif;
+    height: 100%;
+    /*background-color: #96897B;*/
+    color:#f8f8ff;
+
+    background-color: #c1b3a3;
+    background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%2396897b' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+html{
+    height: 100%;
+    color: #DCDCDC;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 4rem;    /* Footer height */
+}
+
+h1{
+    text-align:center;
+    color:#DCDCDC;
+    visibility:hidden;
+
+}
+
+h3{
+    color:#DCDCDC;
+}
+
+h4{
+    font-size: 15px;
+    /*text-align:center;*/
+    color:#DCDCDC !important;
+}
+
+.card-extra{
+    font-size: 15px;
+    text-align:center;
+    color:#DCDCDC !important;
+}
+
+
+.btn,
+.btn-primary:visited{
+    border-color:#DCDCDC;
+    color:#DCDCDC;
+}
+
+/*.btn-primary,*/
+/*.btn-primary:hover,*/
+/*.btn-primary:active,*/
+/*.btn-primary:focus{*/
+/*    border-color:#F55D3E !important;*/
+/*    color:#F55D3E !important;*/
+/*}*/
+
+
+
+.border-light{
+    border-color:#DCDCDC !important;
+}
+
+.bar-tri-container{
+    margin-top:0px;
+}
+
+.bar{
+    height:10px;
+    width:70%;
+    margin: auto;
+    background-color:#628395;
+    border-top: 3px solid #F55D3E;
+    margin-bottom:2px;
+    margin-top:1px;
+    transition: transform .4s;
+}
+
+@media (max-width: 30em){
+    .bar{
+        width:100%;
+    }
+}
+
+.tri-container{
+    position:relative;
+}
+
+.triangle{
+    position:relative;
+    width: 0;
+    height: 0;
+    border-left: 135px solid transparent;
+    border-right: 135px solid transparent;
+    border-bottom: 233.8px solid #628395;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.triangle-text{
+    color:#549F93;
+    position: relative;
+    font-size:20px;
+    top: 100px;
+    left: -48px;
+    width: auto;
+    height: auto;
+    background-color:#000;
+}
+
+#triangle-title-div{
+    /*background-color:#000;*/
+    display:table;
+    margin:auto;
+    text-align:center;
+}
+
+#triangle-title{
+    text-align:center;
+    margin: auto;
+}
+
+
+#triangle-subtitle-div{
+    /*background-color:#000;*/
+    display:table;
+    margin:auto;
+    width:150%;
+    text-align:center;
+    white-space: nowrap;
+}
+
+#triangle-subtitle{
+    margin:auto;
+    text-align:center;
+}
+
+#balance-btn-div{
+    position:relative;
+    margin: auto;
+}
+
+#balance-button{
+    text-align:center;
+}
+
+#nav{
+    background-color: #7d9baa !important;
+}
+
+.nav-link{
+    color:#ffffff;
+}
+
+.row{
+    position:relative;
+    text-align:center;
+}
+
+.card{
+    position:relative;
+    background-color: #628395;
+    color: #DCDCDC;
+    border-width: 5px;
+    transition: transform .40s;
+}
+
+.top-row-buffer{
+    margin-top:5%;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+}
+
+.jobDescription{
+    text-align: left;
+}
+
+.workLogosAndText{
+    position:relative;
+}
+
+#mondoLogo{
+
+}
+
+#footer {
+    background-color: #7d9baa;
+    position: absolute;
+    padding-top: 7px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+}
