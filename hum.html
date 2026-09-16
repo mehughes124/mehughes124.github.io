@@ -111,6 +111,40 @@
                         <li> Entirely self-contained — no external domains, services, or network requests </li>
                     </ul>
             </div>
+
+            <hr style="margin: 30px 0;">
+
+            <div class="row">
+                <span>Heft - Text-only zoom and bolder fonts for thin, tiny type.</span>
+            </div>
+            <div class="row">
+                <span>
+                    Plenty of sites set their body text in a hairline weight at 13px. Heft brings back the browser's old "zoom text only" behaviour: Cmd/Ctrl + and − enlarge the words without zooming the whole page, so columns, images and menus stay where they are. A five-step boldness dial thickens spindly fonts, and every setting is remembered per site.
+                </span>
+            </div>
+            <div class="row">
+                <span>Heft version 1.0.0, 2026-09-10</span>
+                    <ul>
+                        <li>Initial release — Manifest V3</li>
+                        <li>Text-only zoom from 50% to 300%, applied inside the site's existing layout</li>
+                        <li>Five-level boldness dial: added font weight first, then a hairline stroke for fonts that only ship one thin cut</li>
+                        <li>Cmd/Ctrl +/− for size, Option/Alt + Cmd/Ctrl +/− for boldness, Cmd/Ctrl 0 to reset both</li>
+                        <li>Settings saved per site, with a per-site switch to hand the shortcuts back to pages that use them for their own zoom</li>
+                        <li>Keeps up with infinite scroll, single-page apps and live feeds</li>
+                        <li>No accounts, no analytics, no network requests</li>
+                    </ul>
+            </div>
+            <div class="row">
+                <span>Heft version 1.1.0, 2026-09-15</span>
+                    <ul>
+                        <li>Fixed the most common reason Heft "only worked on some sites": site CSS that outranked ours. Heft now detects when a change did not take effect and applies it directly to those elements instead</li>
+                        <li>Text inside open shadow roots (web components) is now resized</li>
+                        <li>Text inside embedded frames is now resized, and a frame follows the setting chosen for the page being read</li>
+                        <li>New "Check this page" button in the popup, reporting how many text elements were resized, how many had to be forced past the site's CSS, and anything that could not be changed, with the reason</li>
+                        <li>Optional console logging for a detailed per-element breakdown</li>
+                        <li>Permissions changed: activeTab replaced with host_permissions, which the popup needs in order to ask the page what actually changed. The install warning is unchanged</li>
+                    </ul>
+            </div>
         </div>
         </main>
 
