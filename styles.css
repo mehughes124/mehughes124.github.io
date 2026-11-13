@@ -311,13 +311,17 @@ li::marker { color: var(--sage); }
   text-align: center;
   align-items: center;
   min-height: 0;
-  background: var(--clay);
-  border-color: var(--clay);
-  color: #fff;
+  background: transparent;
+  border: 2px solid var(--clay);
+  box-shadow: none;
+  color: var(--ink);
+  transition: background .2s, border-color .2s;
 }
-.pan.balance:hover { color: #fff; background: color-mix(in srgb, var(--clay) 88%, #000); border-color: transparent; }
-@media (prefers-color-scheme: dark) {
-  .pan.balance, .pan.balance:hover { color: #1d2320; }
+.pan.balance .pan-go { color: var(--clay); }
+.pan.balance:hover {
+  color: var(--ink);
+  border-color: var(--clay);
+  background: color-mix(in srgb, var(--clay) 14%, var(--paper));
 }
 
 @media (prefers-reduced-motion: reduce) {
