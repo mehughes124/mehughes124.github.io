@@ -259,7 +259,7 @@ li::marker { color: var(--sage); }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
-  align-items: end;
+  align-items: stretch;
   transform: rotate(var(--tilt));
   transform-origin: 50% 100%;
   transition: transform .6s cubic-bezier(.34, 1.56, .64, 1);
@@ -273,7 +273,10 @@ li::marker { color: var(--sage); }
   margin-top: 2px;
 }
 .pan {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 168px;
   padding: 22px 22px 20px;
   border-radius: var(--radius);
   text-decoration: none;
@@ -288,26 +291,34 @@ li::marker { color: var(--sage); }
 .pan.work:hover { color: #fff; background: #758a83; }
 .pan .pan-title { font-family: var(--serif); font-size: 1.7rem; font-weight: 500; line-height: 1; display: block; }
 .pan .pan-sub { display: block; margin-top: .55em; font-size: .9rem; opacity: .85; line-height: 1.4; }
-.pan .pan-go { display: inline-block; margin-top: 1.1em; font-size: .85rem; font-weight: 600; }
+.pan .pan-go { display: inline-block; margin-top: auto; padding-top: 1.1em; font-size: .85rem; font-weight: 600; }
 
 .fulcrum {
   display: flex; flex-direction: column; align-items: center;
   margin-top: -1px;
-  text-decoration: none; color: var(--ink);
 }
-.fulcrum:hover { color: var(--ink); }
 .fulcrum-tri {
   width: 0; height: 0;
   border-left: 46px solid transparent;
   border-right: 46px solid transparent;
   border-bottom: 64px solid var(--clay);
-  transition: transform .2s;
 }
-.fulcrum:hover .fulcrum-tri { transform: scaleY(1.06); transform-origin: bottom; }
 .fulcrum-base { width: 160px; height: 3px; background: var(--line); border-radius: 3px; }
-.fulcrum-label { margin-top: 12px; text-align: center; }
-.fulcrum-label strong { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; display: block; line-height: 1.1; }
-.fulcrum-label span { font-size: .85rem; color: var(--ink-soft); }
+
+.pan.balance {
+  width: calc(50% - 7px);
+  margin: 14px auto 0;
+  text-align: center;
+  align-items: center;
+  min-height: 0;
+  background: var(--clay);
+  border-color: var(--clay);
+  color: #fff;
+}
+.pan.balance:hover { color: #fff; background: color-mix(in srgb, var(--clay) 88%, #000); border-color: transparent; }
+@media (prefers-color-scheme: dark) {
+  .pan.balance, .pan.balance:hover { color: #1d2320; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .seesaw-beam { transition: none; }
