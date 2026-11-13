@@ -99,6 +99,7 @@ li::marker { color: var(--sage); }
 
 .wrap { width: min(var(--max), 100% - 48px); margin-inline: auto; }
 .wrap.narrow { width: min(var(--read), 100% - 48px); }
+.wrap.mid { width: min(880px, 100% - 48px); }
 
 .eyebrow {
   font-family: var(--sans);
@@ -224,7 +225,7 @@ li::marker { color: var(--sage); }
   gap: clamp(32px, 6vw, 80px);
   align-items: center;
 }
-.home-hero h1 { font-size: clamp(3rem, 7.5vw, 5.6rem); max-width: 9ch; }
+.home-hero h1 { font-size: clamp(3rem, 7.5vw, 5.6rem); max-width: 7ch; }
 .home-hero h1 em { font-style: italic; color: var(--sage-deep); font-variation-settings: "SOFT" 100, "opsz" 144; }
 .home-hero .lede { font-size: 1.2rem; color: var(--ink-soft); max-width: 40ch; margin-top: 1.2rem; }
 
@@ -355,7 +356,7 @@ li::marker { color: var(--sage); }
 
 .entry {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 170px 1fr;
   gap: clamp(20px, 4vw, 48px);
   padding: clamp(24px, 3.5vw, 36px);
   background: var(--paper-raised);
