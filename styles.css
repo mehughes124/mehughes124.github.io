@@ -472,6 +472,7 @@ li::marker { color: var(--sage); }
 .ext > p { max-width: 64ch; }
 
 .video {
+  max-width: 640px;
   position: relative; aspect-ratio: 16 / 9;
   border-radius: var(--radius); overflow: hidden;
   background: var(--sage-wash);
@@ -559,3 +560,69 @@ li::marker { color: var(--sage); }
 }
 .socials a:hover { background: var(--sage); border-color: var(--sage); color: #fff; }
 .socials svg { width: 16px; height: 16px; }
+
+/* --- Products (web apps) ------------------------------------------------ */
+
+.product {
+  display: flex; gap: 20px; align-items: flex-start;
+  padding: 26px;
+  background: var(--sage-mist);
+  border: 1px solid var(--sage-wash);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color .2s, transform .2s, box-shadow .2s;
+}
+.product:hover { color: var(--ink); border-color: var(--sage); transform: translateY(-2px); box-shadow: var(--shadow); }
+.product .ext-icon {
+  flex: none;
+  width: 52px; height: 52px; border-radius: 14px;
+  background: var(--sage); color: #fff;
+  display: grid; place-items: center;
+}
+.product .ext-icon svg { width: 26px; height: 26px; }
+.product-body { display: block; }
+.product-kicker { display: block; font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--sage-deep); margin-bottom: .3rem; }
+.product h3 { font-size: 1.6rem; margin: 0 0 .3em; }
+.product p { margin: 0; color: var(--ink-soft); max-width: 62ch; }
+.product .ext-meta { display: inline-block; margin-top: 14px; font-size: .88rem; font-weight: 600; color: var(--sage-deep); }
+.product-lg { padding: clamp(28px, 4vw, 44px); }
+.product-lg h3 { font-size: 2rem; }
+@media (max-width: 560px) { .product { flex-direction: column; } }
+
+.group { scroll-margin-top: 90px; margin-bottom: 36px; }
+.group-title {
+  font-family: var(--sans); font-size: .8rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft);
+  margin: 0 0 14px;
+}
+
+/* Collapsible release notes */
+details.changelog > summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 7px 14px 7px 12px;
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  margin-bottom: 0;
+  transition: border-color .15s;
+}
+details.changelog > summary::-webkit-details-marker { display: none; }
+details.changelog > summary::before {
+  content: ""; width: 7px; height: 7px;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg); transition: transform .2s;
+}
+details.changelog[open] > summary::before { transform: rotate(45deg) translate(-2px, -1px); }
+details.changelog > summary:hover { border-color: var(--sage); }
+details.changelog[open] > summary { margin-bottom: 1.2rem; }
+details.changelog .count {
+  font-size: .72rem; letter-spacing: 0; padding: 1px 7px; border-radius: 999px;
+  background: var(--sage-wash); color: var(--sage-ink);
+}
+
+/* Homepage past-work teaser */
+.past-teaser { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+.past-teaser h2 { margin-bottom: .3em; }
+.past-teaser p { margin: 0; }

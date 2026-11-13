@@ -49,6 +49,16 @@
     }
   }
 
+  // Web work page: open a project's release notes when linked to it by #anchor
+  var openFromHash = function () {
+    if (!location.hash) return;
+    var target = document.getElementById(location.hash.slice(1));
+    var notes = target && target.querySelector('details.changelog');
+    if (notes) notes.open = true;
+  };
+  openFromHash();
+  window.addEventListener('hashchange', openFromHash);
+
   // Work page: highlight one facet of every role
   var jobs = document.getElementById('jobs');
   var chips = document.querySelectorAll('[data-filter-btn]');
