@@ -1,93 +1,115 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-        <link href="styles.css" rel="stylesheet">
-        <title>Michael Hughes's CS50 Homepage Project - Home</title>
-    </head>
-    <body class="Site homePage">
-
-        <nav class="navbar navbar-expand-md navbar-light bg-light" id="nav">
-            <a class="navbar-brand" href="/">Michael Hughes</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="flex-sm-fill text-sm-center nav-link" href="work">Work</a>
-                    <a class="flex-sm-fill text-sm-center nav-link" href="life">Life</a>
-                    <a class="flex-sm-fill text-sm-center nav-link" href="balance">Balance</a>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michael Hughes</title>
+    <meta name="description" content="Michael Hughes: work, life, balance, and the Chrome extensions I make.">
+    <meta name="theme-color" content="#80958E">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2380958E'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='white'%3EMH%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body class="home">
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html"><span class="brand-mark">MH</span>Michael Hughes</a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+        <nav class="nav" id="nav">
+          <a href="work.html">Work</a>
+          <a href="life.html">Life</a>
+          <a href="balance.html">Balance</a>
+          <a href="hum.html">Extensions</a>
+          <a href="privacy.html">Privacy</a>
         </nav>
-        <main class="Site-content">
-        <h1>
-            hello, home page
-        </h1>
+      </div>
+    </header>
 
-        <div class="container-fluid w-75">
-            <div class="row h-100">
-                <!--<div class="col-2 align-self-center h-100"></div>-->
-                <div class="col-sm-3 align-self-center h-100 offset-sm-2">
-                    <div class="card text-white h-100" id="work-card">
-                        <div class="card-body">
-                            <h3 class="card-title">Work</h3>
-                            <h4 class="card-subtitle mb-2 card-extra">What I do for other people</h4>
-                            <a href="work" class="btn" id="work-button">Peruse</a>
-                        </div>
-                    </div>
-                </div>
-                <!--<div class="col-2 align-self-center h-100"></div>-->
-                <div class="col-sm-3 align-self-center h-100 offset-sm-2">
-                    <div class="card text-white h-100" id="life-card">
-                        <div class="card-body">
-                            <h3 class="card-title">Life</h3>
-                            <h4 class="card-subtitle mb-2 card-extra">My Hobbies and Interests</h4>
-                            <a href="life" class="btn" id="life-button">Check it out</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 align-self-center h-100"></div>
-            </div>
+    <main>
+      <section class="wrap home-hero">
+        <div>
+          <p class="eyebrow">Hello, home page</p>
+          <h1>Michael <em>Hughes</em></h1>
+          <p class="lede">Product, marketing and ops person. Maker of small, privacy-respecting Chrome extensions. Occasional cook, mediocre Overwatch player.</p>
+          <div class="hero-links">
+            <a class="btn btn-solid" href="hum.html">Chrome extensions <span class="arrow">→</span></a>
+            <a class="btn btn-ghost" href="https://www.threads.com/@mehughes124" target="_blank" rel="noopener">Say hi on Threads</a>
+          </div>
         </div>
-        <div class="container-fluid w-75 bar-tri-container">
-            <div class="bar" id="bar"></div>
-            <div class="container tri-container">
-                <div class="triangle">
-                    <div class="triangle-text">
-                        <div id="triangle-title-div"><h3 id="triangle-title">Balance</h3></div>
-                        <div id="triangle-subtitle-div"><h4 id="triangle-subtitle">Keepin' Healthy</h4></div>
-                        <div id="balance-btn-div"><a href="balance" class="btn" id="balance-button">Read on</a></div>
-                    </div>
-                </div>
-            </div>
+
+        <div class="seesaw" id="seesaw" aria-label="Work, life and balance">
+          <div class="seesaw-beam">
+            <a class="pan work" href="work.html" data-tilt="-6">
+              <span class="pan-title">Work</span>
+              <span class="pan-sub">What I do for other people</span>
+              <span class="pan-go">Peruse →</span>
+            </a>
+            <a class="pan life" href="life.html" data-tilt="6">
+              <span class="pan-title">Life</span>
+              <span class="pan-sub">My hobbies and interests</span>
+              <span class="pan-go">Check it out →</span>
+            </a>
+          </div>
+          <a class="fulcrum" href="balance.html" data-wobble>
+            <span class="fulcrum-tri"></span>
+            <span class="fulcrum-base"></span>
+            <span class="fulcrum-label"><strong>Balance</strong><span>Keepin' healthy · read on</span></span>
+          </a>
         </div>
-        </main>
+      </section>
 
-        <footer id="footer">
-            <div class=container>
-                <span>
-                    <a href="https://www.twitter.com/mehughes124" target="_blank"><img src="Images/twitter_logo.png"></a>
-                </span>
-                <span><a href="https://www.linkedin.com/in/michael-hughes-a1713524/" target="_blank"><img src="Images/linkedin_logo.png"></a></span>
+      <section class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Chrome extensions</p>
+              <h2>Small tools, no tracking.</h2>
             </div>
-        </footer>
+            <a href="privacy.html">Privacy policy →</a>
+          </div>
+          <div class="ext-grid">
+          <a class="ext-card" href="hum.html#hum">
+            <span class="ext-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 12h1.5M7 8v8M10.5 5v14M14 9v6M17.5 7v10M21 12h-1"/></svg></span>
+            <h3>Hum</h3>
+            <p>Fade out. Focus in. A little ambient-sound mixer for your toolbar.</p>
+            <span class="ext-meta">v0.0.5 · release notes →</span>
+          </a>
+          <a class="ext-card" href="hum.html#vagal-hum">
+            <span class="ext-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="8.5" opacity=".45"/></svg></span>
+            <h3>Vagal Hum</h3>
+            <p>A simple tone generator for humming practice, with a breath guide.</p>
+            <span class="ext-meta">v1.0.0 · release notes →</span>
+          </a>
+          <a class="ext-card" href="hum.html#webcam-mirror">
+            <span class="ext-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="m16 10.5 5-3v9l-5-3"/></svg></span>
+            <h3>Webcam Mirror</h3>
+            <p>Quick-glance webcam feed from your toolbar. Click, see yourself.</p>
+            <span class="ext-meta">v1.0.0 · release notes →</span>
+          </a>
+          <a class="ext-card" href="hum.html#heft">
+            <span class="ext-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19 8 5l5 14M4.8 14h6.4"/><path d="M15 19V9.5M15 13.2c0-2 1.3-3.7 3.2-3.7S21 11 21 14.2s-1.3 4.8-3 4.8-3-1.5-3-3.3" stroke-width="2.6"/></svg></span>
+            <h3>Heft</h3>
+            <p>Text-only zoom and bolder fonts for thin, tiny type.</p>
+            <span class="ext-meta">v1.1.0 · release notes →</span>
+          </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="sign">Michael Hughes<small>Work, life, and the balance in between.</small></div>
+        <div class="socials">
+          <a href="https://www.threads.com/@mehughes124" target="_blank" rel="noopener">Threads <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a>
+          <a href="https://www.twitter.com/mehughes124" target="_blank" rel="noopener">Twitter / X <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a>
+          <a href="https://www.linkedin.com/in/michael-hughes-a1713524/" target="_blank" rel="noopener">LinkedIn <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a>
+        </div>
+      </div>
+    </footer>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="homepage.js"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176728803-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-176728803-1');
-        </script>
-    </body>
+    <script src="homepage.js"></script>
+  </body>
 </html>

@@ -1,90 +1,87 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-        <link href="styles.css" rel="stylesheet">
-        <title>Michael Hughes's CS50 Homepage Project - Life</title>
-    </head>
-    <body class="Site">
-        <nav class="navbar navbar-expand-md navbar-light bg-light" id="nav">
-            <a class="navbar-brand" href="/">Michael Hughes</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="flex-sm-fill text-sm-center nav-link" href="work">Work</a>
-                    <a class="flex-sm-fill text-sm-center nav-link" href="life">Life</a>
-                    <a class="flex-sm-fill text-sm-center nav-link" href="balance">Balance</a>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Life · Michael Hughes</title>
+    <meta name="description" content="Michael Hughes's hobbies and interests: PC gaming, cooking and filmgoing.">
+    <meta name="theme-color" content="#80958E">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2380958E'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='white'%3EMH%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html"><span class="brand-mark">MH</span>Michael Hughes</a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+        <nav class="nav" id="nav">
+          <a href="work.html">Work</a>
+          <a href="life.html" aria-current="page">Life</a>
+          <a href="balance.html">Balance</a>
+          <a href="hum.html">Extensions</a>
+          <a href="privacy.html">Privacy</a>
         </nav>
-        <main class="Site-content">
-        <h1>
-            hello, life page
-        </h1>
-        <div class="container-fluid d-flex flex-column">
-            <div class="row align-items-center">
-                <div class="col-sm-3 logoSpace h-auto offset-sm-2"><img src="Images/PCGaming_logo.webp" class="logo" id="gamingLogo"></div>
-                <div class="col-sm-5 jobDescription h-auto">
-                    <h3>PC Gaming</h3>
-                    <ul>
-                        <li>I am a thoroughly mediocre Overwatch player (Reinhardt/Orissa main, but I’ve been playing DPS lately and really enjoying Ashe).</li>
-                        <li>Other games I’ve played way too many hours of over the years: Diablo 2 and 3, Team Fortress 2, Halo 2, Call of Duty 4.</li>
-                        <li>I compulsively replay Super Mario 64 in an emulator about once every two years or so.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row align-items-center top-row-buffer">
-                <div class="col-sm-3 logoSpace offset-sm-2"><img src="Images/cooking_logo.png" class="logo"></div>
-                <div class="col-sm-5 jobDescription">
-                    <h3>Cooking</h3>
-                    <ul>
-                        <li>I call myself a cook, not a chef. I enjoy learning about the fundamentals of cooking.</li>
-                        <li>I use recipes for inspiration, and tinker from there. Also, butter. Just put butter in it.</li>
-                        <li>The two main sources of my cooking know-how: Alton Brown and Kenji Lopez-Alt</li>
-                    </ul>
-                </div>
-            </div>
+      </div>
+    </header>
 
-            <div class="row align-items-center top-row-buffer">
-                <div class="col-sm-3 logoSpace offset-sm-2"><img src="Images/movies_logo.png" class="logo"></div>
-                <div class="col-sm-5 jobDescription">
-                    <h3>Filmgoing</h3>
-                    <ul>
-                        <li>I like movies, and I love seeing them in a crowded theater. </li>
-                        <li>Top movie experiences: Seeing The Lobster at a packed opening-night crowd at BAM. Watching the tidal wave sequence of Interstellar at Lincoln Center’s massive IMAX. Twilight: New Dawn midnight show in college (yes, really. Hilarious good time with a packed, tipsy sorority girl crowd).</li>
-                        <li>My two favorite films will always be Once and Ratatouille</li>
-                        <li>My ratings on <a href="https://letterboxd.com/mehughes124/films/by/member-rating/">Letterboxd</a>.</li>
-                    </ul>
-                </div>
-            </div>
+    <main>
+      <section class="wrap page-hero">
+        <p class="eyebrow">Hello, life page</p>
+        <h1>Hobbies &amp; <em>interests.</em></h1>
+        <p class="lede">Games, butter, and big crowded movie theaters.</p>
+      </section>
+      <section class="wrap entries">
+        <article class="entry">
+          <div class="entry-side">
+            <span class="glyph"><i style="--src: url('Images/PCGaming_logo.webp')"></i></span>
+            <h2>PC Gaming</h2>
+          </div>
+          <ul class="entry-body">
+            <li>I am a thoroughly mediocre Overwatch player (Reinhardt/Orisa main, but I’ve been playing DPS lately and really enjoying Ashe).</li>
+            <li>Other games I’ve played way too many hours of over the years: Diablo 2 and 3, Team Fortress 2, Halo 2, Call of Duty 4.</li>
+            <li>I compulsively replay Super Mario 64 in an emulator about once every two years or so.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <div class="entry-side">
+            <span class="glyph"><i style="--src: url('Images/cooking_logo.png')"></i></span>
+            <h2>Cooking</h2>
+          </div>
+          <ul class="entry-body">
+            <li>I call myself a cook, not a chef. I enjoy learning about the fundamentals of cooking.</li>
+            <li>I use recipes for inspiration, and tinker from there. Also, butter. Just put butter in it.</li>
+            <li>The two main sources of my cooking know-how: Alton Brown and Kenji López-Alt.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <div class="entry-side">
+            <span class="glyph"><i style="--src: url('Images/movies_logo.png')"></i></span>
+            <h2>Filmgoing</h2>
+          </div>
+          <ul class="entry-body">
+            <li>I like movies, and I love seeing them in a crowded theater.</li>
+            <li>Top movie experiences: Seeing The Lobster at a packed opening-night crowd at BAM. Watching the tidal wave sequence of Interstellar at Lincoln Center’s massive IMAX. Twilight: New Dawn midnight show in college (yes, really. Hilarious good time with a packed, tipsy sorority girl crowd).</li>
+            <li>My two favorite films will always be Once and Ratatouille.</li>
+            <li>My ratings on <a href="https://letterboxd.com/mehughes124/films/by/member-rating/" target="_blank" rel="noopener">Letterboxd</a>.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="sign">Michael Hughes<small>Work, life, and the balance in between.</small></div>
+        <div class="socials">
+          <a href="https://www.threads.com/@mehughes124" target="_blank" rel="noopener">Threads <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a>
+          <a href="https://www.twitter.com/mehughes124" target="_blank" rel="noopener">Twitter / X <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a>
+          <a href="https://www.linkedin.com/in/michael-hughes-a1713524/" target="_blank" rel="noopener">LinkedIn <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a>
         </div>
-        </main>
+      </div>
+    </footer>
 
-        <footer id="footer">
-            <div class="container">
-                <span>
-                    <a href="https://www.twitter.com/mehughes124" target="_blank"><img src="Images/twitter_logo.png"></a>
-                </span>
-                <span><a href="https://www.linkedin.com/in/michael-hughes-a1713524/" target="_blank"><img src="Images/linkedin_logo.png"></a></span>
-            </div>
-        </footer>
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="homepage.js"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176728803-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-176728803-1');
-        </script>
-    </body>
+    <script src="homepage.js"></script>
+  </body>
 </html>
