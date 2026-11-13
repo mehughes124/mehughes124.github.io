@@ -626,3 +626,5 @@ details.changelog .count {
 .past-teaser { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
 .past-teaser h2 { margin-bottom: .3em; }
 .past-teaser p { margin: 0; }
+
+.ext > :last-child { margin-bottom: 0; }
